@@ -1,0 +1,26 @@
+{% extends "base_layout.html" %}
+{% block title %} Register Section {% endblock %}
+
+<nav>
+    {% block nav %}
+    <a class="nav_text" href="/"> Home </a> |
+    <a class="nav_text" href="/users/register"> Register </a>
+    {% endblock %}
+</nav>
+{% block content %}
+<br>
+<h1>Register Page!</h1>
+<br>
+<h2>
+    Welcome to the register page!
+</h2>
+<br>
+<div class="descField">
+    <form class="form-with-validation" method="POST">
+        {{ form }}
+        {% csrf_token %}
+        <br>
+        <button type="submit" style="text-align: center;"> Submit </button>
+    </form>
+</div>
+{% endblock %}

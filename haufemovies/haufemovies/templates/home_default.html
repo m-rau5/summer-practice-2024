@@ -1,0 +1,22 @@
+{% extends "base_layout.html" %} 
+{% block title %} 
+Home 
+{% endblock %} 
+
+ <nav>
+      {% block nav %}
+        <a class="nav_text" href="/"> Home </a> |
+        <a class="nav_text" href="users/register"> Register </a> |
+        <a class="nav_text" href="users/login/"> Login </a>
+      {% endblock %}
+    </nav>
+
+{% block content %}
+<br>
+<h1>Home Page!</h1>
+<br>
+<p>
+  Hello to the home page! To go to the Register section, go
+  <a href="users/register">here</a>.
+</p>
+{% endblock %}

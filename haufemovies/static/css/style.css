@@ -1,0 +1,72 @@
+body {
+    background-color: #140E15;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2 {
+    color: white;
+    text-align: center;
+}
+
+form{
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.centerImage{
+    text-align: center;
+}
+
+nav {
+    padding: 1rem;
+    font-size: 2.5rem;
+    background-color: #C5A9C8;
+}
+
+.nav_text {
+    text-decoration: none;
+    color:#140E15;
+}
+
+.nav_text:hover {
+    text-decoration: none;
+    color: #664141;
+}
+
+.longText{
+    word-wrap: break-word;
+}
+
+button,.aButton {
+    border: none;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.descField{
+    margin: auto;
+    width: 450px; 
+    border: 1px transparent;
+}
+.boxDiv{
+    margin: auto;
+    width: 500px;
+    border: 2px solid white;
+}

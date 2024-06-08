@@ -1,0 +1,43 @@
+{% extends 'base_layout.html' %}
+
+{% block title %}
+Posts List
+{% endblock %}
+
+<nav>
+    {% block nav %}
+    <a class="nav_text" href="/"> Home </a> |
+    <a class="nav_text" href="/"> Friends </a> |
+    <a class="nav_text" href="/"> Movies </a> |
+    <a class="nav_text" href="/"> Logout </a>
+    {% endblock %}
+</nav>
+
+{% block content %}
+<br>
+<h1>Your Movie List</h1>
+<section>
+    <br>
+    {% for movie in movies %}
+    <div class="boxDiv">
+        <br>
+        <h1>{{ movie.title }}</h1>
+        <br>
+        <img style="margin-left: 60px;" calss = "centerImage" src="{{ movie.image_link }}">
+        <br><br>
+        <p>Genre: {{ movie.genre }}</p>
+        <br>
+        <p>Director: {{ movie.director}}</p>
+        <br>
+        <p>Description:</p>
+        <p style="height:8px"> </p>
+        <div class="descField">
+            <p class="longText">{{ movie.description }}</p>
+        </div>
+        <p></p>
+        <br>
+    </div>
+    <br>
+    {% endfor %}
+</section>
+{% endblock %}
